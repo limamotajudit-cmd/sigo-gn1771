@@ -1,0 +1,66 @@
+/* Reset básico para eliminar márgenes extraños */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #1c1e21;
+}
+
+/* Estilo del encabezado con Flexbox */
+header {
+  background-color: #0d3b66;
+  color: #ffffff;
+  padding: 1.2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+/* Contenedor principal centrado */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  padding: 1.5rem;
+}
+
+/* Tarjetas para Login y Dashboard */
+.card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* =================================================== */
+/* MEDIA QUERY: Reglas para celulares (menos de 600px) */
+/* =================================================== */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.1rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1.2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+}
